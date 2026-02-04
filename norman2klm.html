@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Models Explained - Norman, GOMS, KLM</title>
+</head>
+<body>
+    <header>
+        <h1>Human-Computer Interaction Portfolio</h1>
+        <p><strong>Understanding HCI Analysis Models</strong></p>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="cv.html">📄 About Don Norman</a></li>
+            <li><a href="contact.html">📧 Get in Touch</a></li>
+            <li><a href="analysis.html">🔍 Real-World Analysis</a></li>
+            <li><a href="norman2klm.html">📊 HCI Models Explained</a></li>
+            <li><a href="assignment01.html">📚 Assignment Guidelines</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>HCI Analysis Frameworks</h2>
+
+        <section>
+            <h3>Introduction: Why We Need Analysis Models</h3>
+            <p>
+                Imagine you're designing a new banking app for Pakistan. How do you know if your 
+                design is good? How can you predict if users will struggle? How do you compare 
+                two different design approaches objectively?
+            </p>
+            <p>
+                This is where HCI analysis models come in. They provide structured, scientific 
+                methods to evaluate and predict user interaction with systems. Three fundamental 
+                frameworks form the foundation of HCI analysis:
+            </p>
+            <ul>
+                <li><strong>Norman's Design Principles</strong> — Qualitative guidelines for good design</li>
+                <li><strong>GOMS Model</strong> — Task analysis framework for expert users</li>
+                <li><strong>KLM (Keystroke-Level Model)</strong> — Quantitative time prediction method</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Part 1: Norman's Seven Principles of Design</h3>
+            <p>
+                Don Norman identified seven fundamental principles that make interfaces intuitive 
+                and usable. Let's explore each with Pakistani examples.
+            </p>
+
+            <article>
+                <h4>Principle 1: Discoverability</h4>
+                <blockquote>
+                    <p><em>"Can users figure out what actions are possible?"</em></p>
+                </blockquote>
+                
+                <p>
+                    <strong>Definition:</strong> Users should be able to discover available actions 
+                    without instruction or prior training.
+                </p>
+
+                <h5>Pakistani Example: ATM Machine</h5>
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Good Discoverability</th>
+                            <th>Poor Discoverability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>HBL ATM:</strong> Labeled buttons next to screen options<br>
+                                "Cash Withdrawal" → [Button 1]<br>
+                                "Balance Inquiry" → [Button 2]<br>
+                                Clear numbered buttons match screen positions
+                            </td>
+                            <td>
+                                <strong>Old MCB ATM:</strong> Unlabeled function keys<br>
+                                User must guess which F-key corresponds to which option<br>
+                                No visual mapping between screen and buttons
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Design Checklist for Discoverability:</h5>
+                <ul>
+                    <li>☑️ Are interactive elements visually distinct from static content?</li>
+                    <li>☑️ Can users identify all possible actions without help documentation?</li>
+                    <li>☑️ Do icons have text labels for clarity?</li>
+                    <li>☑️ Is navigation structure visible and comprehensible?</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Principle 2: Feedback</h4>
+                <blockquote>
+                    <p><em>"Does the system communicate what happened after user actions?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> The system should provide immediate, clear information 
+                    about the result of every action.
+                </p>
+
+                <h5>Real Example: Mobile Banking</h5>
+                <dl>
+                    <dt>✅ Excellent Feedback (Easypaisa)</dt>
+                    <dd>
+                        <strong>Action:</strong> Send Rs 1,000 to friend<br>
+                        <strong>Feedback:</strong>
+                        <ol>
+                            <li>Loading animation during processing (2 seconds)</li>
+                            <li>Success screen with green checkmark and sound</li>
+                            <li>"Rs 1,000 sent to 03XX-XXXXXXX"</li>
+                            <li>Transaction ID: ABC123456</li>
+                            <li>New balance displayed</li>
+                            <li>Option to share receipt</li>
+                        </ol>
+                    </dd>
+
+                    <dt>❌ Poor Feedback (Old NADRA system)</dt>
+                    <dd>
+                        <strong>Action:</strong> Submit online application<br>
+                        <strong>Feedback:</strong>
+                        <ul>
+                            <li>Loading... (no indication of progress)</li>
+                            <li>Long wait (30+ seconds)</li>
+                            <li>Generic "Application submitted" message</li>
+                            <li>No confirmation number</li>
+                            <li>No indication of next steps or timeline</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+                <h5>Types of Feedback:</h5>
+                <table border="1">
+                    <caption>Feedback Categories</caption>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Example</th>
+                            <th>When to Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visual</td>
+                            <td>Button changes color when clicked</td>
+                            <td>Instant actions</td>
+                        </tr>
+                        <tr>
+                            <td>Auditory</td>
+                            <td>Beep when card tapped (Metro card)</td>
+                            <td>Eyes-free interactions</td>
+                        </tr>
+                        <tr>
+                            <td>Haptic</td>
+                            <td>Phone vibration on typing</td>
+                            <td>Touch interfaces</td>
+                        </tr>
+                        <tr>
+                            <td>Textual</td>
+                            <td>"File uploaded successfully"</td>
+                            <td>Important confirmations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h4>Principle 3: Conceptual Model</h4>
+                <blockquote>
+                    <p><em>"Does the design help users build an accurate mental model?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> The conceptual model is the user's understanding of 
+                    how the system works. Good design makes this model accurate and easy to form.
+                </p>
+
+                <h5>Example: Online Shopping Cart Metaphor</h5>
+                <p>Why Daraz uses a "cart" icon instead of "basket" or "bag":</p>
+                <ul>
+                    <li>✅ Supermarket carts are familiar to all Pakistanis</li>
+                    <li>✅ You can add/remove items before checkout (matches real cart)</li>
+                    <li>✅ Cart "fills up" as you add items (visual parallel)</li>
+                    <li>✅ You can "empty" the cart (delete all) — real-world action</li>
+                </ul>
+
+                <p><strong>Mental Model Mismatch Example:</strong></p>
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>System Design</th>
+                            <th>User's Mental Model</th>
+                            <th>Actual Behavior</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pakistan Post tracking "consignment number"</td>
+                            <td>Like courier tracking: Enter number, see real-time location</td>
+                            <td>Shows only major checkpoints, updates once daily</td>
+                            <td>Confusion, frustration, support calls</td>
+                        </tr>
+                        <tr>
+                            <td>Careem "Schedule Ride" feature</td>
+                            <td>Book ride in advance, captain assigned at booking time</td>
+                            <td>Captain only assigned 15 mins before pickup time</td>
+                            <td>Users concerned ride won't be available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h4>Principle 4: Affordances</h4>
+                <blockquote>
+                    <p><em>"What actions does the design suggest are possible?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> Affordances are perceived properties that suggest how 
+                    an object should be used.
+                </p>
+
+                <h5>Physical Affordances in Pakistan:</h5>
+                <ol>
+                    <li>
+                        <strong>Metro Bus Door Buttons:</strong> Large, raised button affords pushing. 
+                        Green color when active affords "safe to press."
+                    </li>
+                    <li>
+                        <strong>Motorcycle Helmet Strap:</strong> Two D-rings afford threading one 
+                        through the other (though many users struggle initially).
+                    </li>
+                    <li>
+                        <strong>Tetrapak Juice Box:</strong> Perforated circle affords pushing straw 
+                        through. Poor affordance: users often push wrong side.
+                    </li>
+                </ol>
+
+                <h5>Digital Affordances:</h5>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Visual Cue</th>
+                            <th>Afforded Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Underlined blue text</td>
+                            <td>Color + underline</td>
+                            <td>Clickable link</td>
+                        </tr>
+                        <tr>
+                            <td>Button with shadow/gradient</td>
+                            <td>3D appearance</td>
+                            <td>Push/tap action</td>
+                        </tr>
+                        <tr>
+                            <td>Slider with draggable thumb</td>
+                            <td>Raised handle on track</td>
+                            <td>Drag left/right</td>
+                        </tr>
+                        <tr>
+                            <td>Text field with blinking cursor</td>
+                            <td>Cursor animation</td>
+                            <td>Type text here</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>False Affordances (Design Anti-patterns):</h5>
+                <ul>
+                    <li>❌ Non-clickable text styled like links (underlined, blue)</li>
+                    <li>❌ Disabled buttons that look exactly like enabled ones</li>
+                    <li>❌ Static images that look like buttons (drop shadow, hover effects)</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Principle 5: Signifiers</h4>
+                <blockquote>
+                    <p><em>"Where exactly should users act?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> Signifiers indicate where the action should take place. 
+                    They make affordances perceivable.
+                </p>
+
+                <h5>Difference: Affordances vs Signifiers</h5>
+                <table border="1" width="100%">
+                    <caption>Understanding the Distinction</caption>
+                    <thead>
+                        <tr>
+                            <th>Object</th>
+                            <th>Affordance</th>
+                            <th>Signifier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Door</td>
+                            <td>Can be pushed or pulled</td>
+                            <td>"PUSH" sign / vertical handle (pull) vs flat plate (push)</td>
+                        </tr>
+                        <tr>
+                            <td>Touchscreen</td>
+                            <td>Can be touched anywhere</td>
+                            <td>Button graphics, highlights showing touch areas</td>
+                        </tr>
+                        <tr>
+                            <td>Form</td>
+                            <td>Fields can receive text</td>
+                            <td>Labels, placeholder text, required field asterisks (*)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Effective Signifiers in Pakistani Apps:</h5>
+                <dl>
+                    <dt>🚕 Careem Pin Icon</dt>
+                    <dd>Drop pin on map signifies "set pickup location here"</dd>
+
+                    <dt>🛒 Daraz Cart Badge</dt>
+                    <dd>Number on cart icon (e.g., "3") signifies items inside</dd>
+
+                    <dt>📱 JazzCash Amount Field</dt>
+                    <dd>"Rs" prefix signifies "enter amount in Pakistani Rupees"</dd>
+
+                    <dt>🍔 Foodpanda Restaurant Status</dt>
+                    <dd>Green "Open" badge signifies "can order now"</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h4>Principle 6: Mapping</h4>
+                <blockquote>
+                    <p><em>"Is the relationship between controls and effects clear?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> Mapping is the relationship between controls and their 
+                    results. Good mapping is natural and intuitive.
+                </p>
+
+                <h5>Natural Mapping Examples:</h5>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Control</th>
+                            <th>Effect</th>
+                            <th>Why It's Natural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Volume up button (top)</td>
+                            <td>Sound increases</td>
+                            <td>"Up" metaphorically means "more"</td>
+                        </tr>
+                        <tr>
+                            <td>Steering wheel turn left</td>
+                            <td>Car goes left</td>
+                            <td>Direct spatial correspondence</td>
+                        </tr>
+                        <tr>
+                            <td>Scroll down on screen</td>
+                            <td>Content moves up (down revealed)</td>
+                            <td>Mimics looking down on a long page</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Poor Mapping Example: Stove Controls</h5>
+                <pre>
+Burners (Top View):      Controls (Front Panel):
+┌─────┬─────┐            
+│  1  │  2  │            [Knob C] [Knob D] [Knob A] [Knob B]
+├─────┼─────┤            
+│  3  │  4  │            ❌ Which knob controls which burner?
+└─────┴─────┘            No spatial mapping!
+
+Better Design:
+┌─────┬─────┐            
+│  1  │  2  │            [Knob 1] [Knob 2]
+├─────┼─────┤            
+│  3  │  4  │            [Knob 3] [Knob 4]
+└─────┴─────┘            ✅ Layout matches burner positions!
+</pre>
+
+                <h5>Cultural Mapping Considerations:</h5>
+                <p>Mapping can be culturally learned:</p>
+                <ul>
+                    <li>🚦 <strong>Traffic lights:</strong> Red=stop, green=go (universal in Pakistan)</li>
+                    <li>💰 <strong>Currency symbols:</strong> "Rs" before number is more natural for Pakistanis than dollar sign after</li>
+                    <li>📅 <strong>Date format:</strong> DD/MM/YYYY feels more natural than MM/DD/YYYY in Pakistan</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Principle 7: Constraints</h4>
+                <blockquote>
+                    <p><em>"What limitations guide correct behavior?"</em></p>
+                </blockquote>
+
+                <p>
+                    <strong>Definition:</strong> Constraints limit possible actions, reducing errors 
+                    and guiding users toward correct behavior.
+                </p>
+
+                <h5>Four Types of Constraints:</h5>
+                <table border="1" width="100%">
+                    <caption>Constraint Categories with Pakistani Examples</caption>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Physical</strong></td>
+                            <td>Physical properties prevent incorrect actions</td>
+                            <td>
+                                • USB-C cable only fits one way<br>
+                                • SIM card notched corner ensures correct orientation<br>
+                                • ATM card slot shaped to accept card only one way
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Semantic</strong></td>
+                            <td>Meaning of situation limits possible actions</td>
+                            <td>
+                                • Can't send money from empty JazzCash wallet<br>
+                                • Can't book Careem ride to current location<br>
+                                • Can't order from closed restaurant on Foodpanda
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cultural</strong></td>
+                            <td>Cultural conventions constrain behavior</td>
+                            <td>
+                                • Reading Urdu right-to-left constrains text layout<br>
+                                • Iftar time shown in 12-hour format (not 24-hour)<br>
+                                • Honorifics in contact forms (Mr./Ms./Dr.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logical</strong></td>
+                            <td>Reasoning about relationships limits actions</td>
+                            <td>
+                                • Can't checkout empty shopping cart (no items = nothing to buy)<br>
+                                • Can't rate driver before ride completion<br>
+                                • Can't withdraw more than account balance
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Constraints in Form Design:</h5>
+                <p>Good form design uses constraints to prevent errors:</p>
+                <ul>
+                    <li>✅ Phone number field accepts only digits (physical constraint)</li>
+                    <li>✅ Email field requires "@" symbol (logical constraint)</li>
+                    <li>✅ Date picker prevents selecting past dates for appointments (semantic constraint)</li>
+                    <li>✅ Required fields marked with * (cultural/conventional constraint)</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Part 2: GOMS Model</h3>
+            <p>
+                <strong>GOMS</strong> stands for <strong>G</strong>oals, <strong>O</strong>perators, 
+                <strong>M</strong>ethods, and <strong>S</strong>election rules. It's a framework for 
+                analyzing task completion by expert users.
+            </p>
+
+            <h4>GOMS Components Explained:</h4>
+            <dl>
+                <dt>Goals</dt>
+                <dd>What the user wants to accomplish. Can be hierarchical (main goal → sub-goals).</dd>
+
+                <dt>Operators</dt>
+                <dd>Basic actions user can perform. Examples: click mouse, press key, read text.</dd>
+
+                <dt>Methods</dt>
+                <dd>Sequences of operators to accomplish goals. Multiple methods can achieve same goal.</dd>
+
+                <dt>Selection Rules</dt>
+                <dd>Conditions determining which method to use in a given situation.</dd>
+            </dl>
+
+            <h4>Practical Example: Transferring Money via JazzCash</h4>
+
+            <h5>Goal Hierarchy:</h5>
+            <pre>
+Main Goal: Transfer Rs 5,000 to friend
+
+Sub-Goals:
+├─ 1. Open JazzCash app
+├─ 2. Authenticate (enter PIN)
+├─ 3. Navigate to send money function
+├─ 4. Enter recipient details
+├─ 5. Enter amount
+├─ 6. Review transaction
+└─ 7. Confirm transfer
+</pre>
+
+            <h5>Methods Available:</h5>
+            <table border="1" width="100%">
+                <caption>Different Methods to Send Money</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Operators</th>
+                        <th>Time</th>
+                        <th>Prerequisite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Method 1: Favorites</strong></td>
+                        <td>
+                            1. Tap "Send Money"<br>
+                            2. Select from favorites list<br>
+                            3. Enter amount<br>
+                            4. Confirm PIN
+                        </td>
+                        <td>~15 sec</td>
+                        <td>Recipient already in favorites</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Method 2: Recent</strong></td>
+                        <td>
+                            1. Tap "Send Money"<br>
+                            2. Select from recent<br>
+                            3. Enter amount<br>
+                            4. Confirm PIN
+                        </td>
+                        <td>~18 sec</td>
+                        <td>Sent money to this person recently</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Method 3: Manual Entry</strong></td>
+                        <td>
+                            1. Tap "Send Money"<br>
+                            2. Enter 11-digit mobile number<br>
+                            3. Enter amount<br>
+                            4. Review details<br>
+                            5. Confirm PIN
+                        </td>
+                        <td>~35 sec</td>
+                        <td>None (works for any number)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Selection Rules:</h5>
+            <ol>
+                <li><strong>IF</strong> recipient is in favorites → Use Method 1</li>
+                <li><strong>ELSE IF</strong> sent money to this recipient in last 7 days → Use Method 2</li>
+                <li><strong>ELSE</strong> → Use Method 3 (manual entry)</li>
+            </ol>
+
+            <h5>GOMS Analysis Insights:</h5>
+            <p>This GOMS breakdown reveals:</p>
+            <ul>
+                <li>✅ Favorites feature saves 20 seconds per transaction for frequent recipients</li>
+                <li>✅ Expert users develop preference for Method 1, learning to add favorites</li>
+                <li>⚠️ First-time users stuck with Method 3 (slowest)</li>
+                <li>💡 Opportunity: Suggest adding to favorites after first transaction</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Part 3: KLM (Keystroke-Level Model)</h3>
+            <p>
+                KLM is a simplified GOMS variant that predicts task time by breaking interactions 
+                into primitive operations and summing their durations.
+            </p>
+
+            <h4>KLM Operators and Standard Times:</h4>
+            <table border="1" width="100%">
+                <caption>Standard KLM Operator Times (Card et al., 1983)</caption>
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Symbol</th>
+                        <th>Description</th>
+                        <th>Time (seconds)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Keystroke</td>
+                        <td>K</td>
+                        <td>Press and release single key</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>Pointing</td>
+                        <td>P</td>
+                        <td>Move mouse pointer to target</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>Button</td>
+                        <td>B</td>
+                        <td>Press or release mouse button</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>Homing</td>
+                        <td>H</td>
+                        <td>Move hands between keyboard/mouse</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>Mental Act</td>
+                        <td>M</td>
+                        <td>Mental preparation for action</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>System Response</td>
+                        <td>R(t)</td>
+                        <td>Wait for system to respond</td>
+                        <td>Variable</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>KLM Example 1: Online Bill Payment</h4>
+            <p><strong>Task:</strong> Pay K-Electric bill on bank website</p>
+
+            <table border="1" width="100%">
+                <caption>KLM Breakdown: Bill Payment Task</caption>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Action</th>
+                        <th>Operator</th>
+                        <th>Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Think "I need to pay bill"</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Move hand to mouse</td>
+                        <td>H</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Point to "Payments" menu</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Click menu</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Point to "Utility Bills"</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Click option</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Wait for page load</td>
+                        <td>R</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Think about selecting company</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Point to "K-Electric" dropdown</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Click dropdown</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Point to "K-Electric" in list</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Click selection</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Point to reference number field</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Click field</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Move hand to keyboard</td>
+                        <td>H</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Type 14-digit ref (14 keys)</td>
+                        <td>14K</td>
+                        <td>2.80</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Press Tab to amount field</td>
+                        <td>K</td>
+                        <td>0.20</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Type amount "2500" (4 keys)</td>
+                        <td>4K</td>
+                        <td>0.80</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Think before confirming</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Move to mouse</td>
+                        <td>H</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Point to "Submit" button</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Click Submit</td>
+                        <td>B</td>
+                        <td>0.10</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Wait for confirmation</td>
+                        <td>R</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><strong>TOTAL TIME:</strong></th>
+                        <th><strong>19.25 seconds</strong></th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>KLM Example 2: Comparing Two Designs</h4>
+            <p><strong>Scenario:</strong> Ordering food on Foodpanda — Current vs Improved Design</p>
+
+            <h5>Design A (Current): Separate Customization Screen</h5>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Action</th>
+                        <th>Operator</th>
+                        <th>Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Think about choosing item</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tap "Zinger Burger"</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Wait for detail screen</td>
+                        <td>R</td>
+                        <td>0.80</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Scroll to customization</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tap "Extra Cheese" checkbox</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Tap "No Mayo" checkbox</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Think before adding</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Scroll to bottom</td>
+                        <td>P</td>
+                        <td>1.10</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Tap "Add to Cart"</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Wait for cart update</td>
+                        <td>R</td>
+                        <td>0.50</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Tap back button</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><strong>Total Time A:</strong></th>
+                        <th><strong>12.20 seconds</strong></th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Design B (Proposed): Quick-Add with Inline Options</h5>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Action</th>
+                        <th>Operator</th>
+                        <th>Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Think about item</td>
+                        <td>M</td>
+                        <td>1.35</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tap "+" button on item card</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Inline menu appears (no page load)</td>
+                        <td>—</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tap "Extra Cheese" in popup</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tap "No Mayo" in popup</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Tap "Add" (popup closes auto)</td>
+                        <td>P + B</td>
+                        <td>1.20</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Cart updates (visual feedback)</td>
+                        <td>—</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><strong>Total Time B:</strong></th>
+                        <th><strong>6.15 seconds</strong></th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Analysis:</strong></p>
+            <ul>
+                <li>✅ Design B is <strong>50% faster</strong> (6.15s vs 12.20s)</li>
+                <li>✅ Eliminates 2 page transitions (saves 1.30s + cognitive load)</li>
+                <li>✅ Reduces mental preparation steps (1 vs 2)</li>
+                <li>✅ Better for repeat orders (add multiple items quickly)</li>
+            </ul>
+
+            <h4>When to Use KLM:</h4>
+            <table border="1" width="100%">
+                <caption>KLM Use Cases and Limitations</caption>
+                <thead>
+                    <tr>
+                        <th>Good For</th>
+                        <th>Not Suitable For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            ✅ Comparing alternative designs<br>
+                            ✅ Evaluating expert user performance<br>
+                            ✅ Identifying bottlenecks<br>
+                            ✅ Benchmarking interaction time<br>
+                            ✅ Routine, error-free tasks
+                        </td>
+                        <td>
+                            ❌ Novice users (learning time)<br>
+                            ❌ Creative/problem-solving tasks<br>
+                            ❌ Error recovery scenarios<br>
+                            ❌ Complex decision-making<br>
+                            ❌ Social/collaborative tasks
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Conclusion: Combining the Models</h3>
+            <p>
+                Norman's Principles, GOMS, and KLM work together to provide comprehensive UX evaluation:
+            </p>
+            <ul>
+                <li><strong>Norman's Principles</strong> identify <em>what's wrong</em> qualitatively</li>
+                <li><strong>GOMS</strong> structures <em>how users accomplish tasks</em></li>
+                <li><strong>KLM</strong> quantifies <em>how long tasks take</em></li>
+            </ul>
+            <p>
+                For Pakistani developers, these tools help create interfaces that work for our 
+                unique context—from multilingual users to varying internet speeds to diverse 
+                technical literacy levels.
+            </p>
+            <blockquote>
+                <p>
+                    "Good design begins with understanding your users. These models give us 
+                    structured ways to understand, analyze, and improve. But remember: models 
+                    are tools, not rules. Always validate with real user testing."
+                </p>
+                <footer>— HCI Best Practice</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 HCI-CG Course Portfolio Project</small></p>
+        <p>
+            <strong>Quick Links:</strong> 
+            <a href="index.html">Home</a> | 
+            <a href="analysis.html">Case Studies</a> | 
+            <a href="assignment01.html">Assignment Guide</a>
+        </p>
+    </footer>
+</body>
+</html>

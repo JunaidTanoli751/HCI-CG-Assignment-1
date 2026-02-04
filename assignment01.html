@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01 Assignment – Rules and Requirements</title>
+</head>
+<body>
+    <header>
+        <h1>HCI & CG Lab 01 Assignment</h1>
+        <p><em>HTML Fundamentals with Minimal CSS</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="analysis.html">Interaction Analysis</a></li>
+            <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+            <li><a href="assignment01.html">Lab 01 Rules</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Assignment Overview</h2>
+            <p>
+                This assignment focuses on building a strong foundation in semantic HTML
+                with minimal CSS styling. The goal is to demonstrate mastery of HTML
+                structure, tags, and best practices without relying on visual design.
+            </p>
+            
+            <p><strong>Due Date:</strong> Week 05</p>
+            <p><strong>Submission:</strong> GitHub repository link</p>
+            <p><strong>Weight:</strong> 15% of course grade</p>
+        </section>
+
+        <section>
+            <h2>Rules and Scope</h2>
+
+            <article>
+                <h3>1. HTML Requirements</h3>
+                <ul>
+                    <li>Must use <strong>semantic HTML5 tags</strong> appropriately</li>
+                    <li>Required tags to include:
+                        <ul>
+                            <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code></li>
+                            <li><code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></li>
+                            <li><code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> (proper hierarchy)</li>
+                            <li><code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code></li>
+                            <li><code>&lt;table&gt;</code> with <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;caption&gt;</code></li>
+                            <li><code>&lt;form&gt;</code> with proper <code>&lt;label&gt;</code> and input types</li>
+                            <li><code>&lt;img&gt;</code> with alt text</li>
+                            <li><code>&lt;a&gt;</code> for navigation and external links</li>
+                        </ul>
+                    </li>
+                    <li>All HTML must be <strong>valid</strong> (check with W3C validator)</li>
+                    <li>Proper <strong>document structure</strong> with DOCTYPE, html, head, body</li>
+                    <li>Use <strong>meta tags</strong> for charset and viewport</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>2. CSS Restrictions</h3>
+                <p><strong>CRITICAL: Minimal CSS Usage Required</strong></p>
+                <ul>
+                    <li><strong>NO external CSS files allowed</strong></li>
+                    <li><strong>NO &lt;style&gt; blocks in &lt;head&gt;</strong></li>
+                    <li>CSS only permitted as <strong>inline styles</strong> when absolutely necessary</li>
+                    <li>Inline CSS should be used sparingly (less than 5 instances per page)</li>
+                    <li>Acceptable inline CSS uses:
+                        <ul>
+                            <li>Image dimensions: <code>width="300"</code> or <code>style="width:300px"</code></li>
+                            <li>Table borders: <code>border="1"</code></li>
+                            <li>Critical alignment issues only</li>
+                        </ul>
+                    </li>
+                    <li><strong>Avoid decorative styling</strong> – focus on semantic markup</li>
+                </ul>
+                <p>
+                    <strong>Note:</strong> The purpose is to demonstrate that well-structured HTML
+                    can be readable and functional without CSS.
+                </p>
+            </article>
+
+            <article>
+                <h3>3. JavaScript Restrictions</h3>
+                <ul>
+                    <li><strong>NO JavaScript allowed</strong></li>
+                    <li>No <code>&lt;script&gt;</code> tags</li>
+                    <li>No inline event handlers (onclick, onload, etc.)</li>
+                    <li>Pure HTML assignment only</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>4. Required Pages</h3>
+                <p>Your submission must include the following pages:</p>
+                <ol>
+                    <li><strong>index.html</strong> – Homepage with biography and introduction</li>
+                    <li><strong>cv.html</strong> – Curriculum Vitae with tables and lists</li>
+                    <li><strong>contact.html</strong> – Contact form with various input types</li>
+                    <li><strong>analysis.html</strong> – HCI interaction analysis using Norman's principles</li>
+                    <li><strong>norman2klm.html</strong> – Explanation of Norman's principles, GOMS, and KLM</li>
+                    <li><strong>assignment01.html</strong> – This page (rules and exam questions)</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>5. Content Requirements</h3>
+                <ul>
+                    <li>All pages must have consistent navigation</li>
+                    <li>All pages must have header and footer</li>
+                    <li>Use meaningful content (not Lorem Ipsum placeholder text)</li>
+                    <li>Include at least one image with proper alt text</li>
+                    <li>CV page must contain:
+                        <ul>
+                            <li>At least one table with proper structure</li>
+                            <li>Definition list for personal information</li>
+                            <li>Both ordered and unordered lists</li>
+                        </ul>
+                    </li>
+                    <li>Contact page must include:
+                        <ul>
+                            <li>Form with text input, email input, textarea</li>
+                            <li>Radio buttons and checkboxes</li>
+                            <li>Select dropdown menu</li>
+                            <li>Submit and reset buttons</li>
+                            <li>Proper labels for all inputs</li>
+                        </ul>
+                    </li>
+                    <li>Analysis page must demonstrate understanding of HCI principles</li>
+                    <li>Norman2KLM page must explain concepts with examples and calculations</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>6. Best Practices</h3>
+                <ul>
+                    <li>Use proper heading hierarchy (only one h1 per page)</li>
+                    <li>Indent code properly for readability</li>
+                    <li>Use meaningful class and id names (if used)</li>
+                    <li>Add comments to explain complex structures</li>
+                    <li>Ensure all links work correctly</li>
+                    <li>Test in multiple browsers</li>
+                    <li>Follow accessibility guidelines (WCAG)</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>7. GitHub Submission Requirements</h3>
+                <ul>
+                    <li>Create a public GitHub repository</li>
+                    <li>Name format: <code>hci-cg-2026-yourname</code></li>
+                    <li>Enable GitHub Pages for your repository</li>
+                    <li>All files must be in the root directory or organized folders</li>
+                    <li>Include a README.md with:
+                        <ul>
+                            <li>Your name and student ID</li>
+                            <li>Live demo link (GitHub Pages URL)</li>
+                            <li>Brief description of the project</li>
+                        </ul>
+                    </li>
+                    <li>Commit regularly with meaningful commit messages</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Grading Criteria</h2>
+            <table border="1">
+                <caption>Assignment Grading Breakdown</caption>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Points</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Structure & Semantics</td>
+                        <td>30</td>
+                        <td>Proper use of semantic tags, valid HTML, document structure</td>
+                    </tr>
+                    <tr>
+                        <td>Content Quality</td>
+                        <td>25</td>
+                        <td>Meaningful content, proper HCI concepts explained</td>
+                    </tr>
+                    <tr>
+                        <td>Forms & Tables</td>
+                        <td>15</td>
+                        <td>Correct implementation of forms with labels and tables with proper structure</td>
+                    </tr>
+                    <tr>
+                        <td>Navigation & Links</td>
+                        <td>10</td>
+                        <td>Working navigation, all links functional</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td>10</td>
+                        <td>Alt text for images, proper labels, semantic structure</td>
+                    </tr>
+                    <tr>
+                        <td>Code Quality</td>
+                        <td>5</td>
+                        <td>Clean code, proper indentation, comments</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Compliance</td>
+                        <td>5</td>
+                        <td>Minimal to no CSS usage as required</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>100</strong></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Sample Exam Questions & Answers</h2>
+            <p>
+                The following questions are typical of what you might encounter in the exam.
+                Study these carefully as they test fundamental HTML and HCI concepts.
+            </p>
+
+            <article>
+                <h3>Section A: HTML Fundamentals</h3>
+
+                <h4>Question 1: Semantic HTML</h4>
+                <p><strong>Q:</strong> Explain the difference between <code>&lt;div&gt;</code> and <code>&lt;section&gt;</code>. When should each be used?</p>
+                <p><strong>A:</strong></p>
+                <ul>
+                    <li><code>&lt;div&gt;</code> is a generic container with no semantic meaning. It should be used only when no other semantic element is appropriate, typically for styling or JavaScript purposes.</li>
+                    <li><code>&lt;section&gt;</code> represents a thematic grouping of content, typically with a heading. It should be used for distinct sections of a document that would appear in the document outline.</li>
+                    <li>Example: Use <code>&lt;section&gt;</code> for chapters, tabbed content, or different topic areas. Use <code>&lt;div&gt;</code> for wrapper elements purely for layout.</li>
+                </ul>
+
+                <h4>Question 2: Form Accessibility</h4>
+                <p><strong>Q:</strong> Why is it important to use <code>&lt;label&gt;</code> elements with form inputs? Provide an example.</p>
+                <p><strong>A:</strong></p>
+                <p>Labels are crucial for:</p>
+                <ol>
+                    <li><strong>Accessibility:</strong> Screen readers announce the label when the input receives focus</li>
+                    <li><strong>Usability:</strong> Clicking the label focuses the associated input</li>
+                    <li><strong>Clarity:</strong> Makes forms easier to understand</li>
+                </ol>
+                <p>Example:</p>
+                <pre><code>&lt;label for="email"&gt;Email Address:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;</code></pre>
+
+                <h4>Question 3: Table Structure</h4>
+                <p><strong>Q:</strong> What is the purpose of <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> in tables?</p>
+                <p><strong>A:</strong></p>
+                <dl>
+                    <dt>&lt;thead&gt;</dt>
+                    <dd>Contains header rows with column headings. Helps screen readers identify headers and can be repeated on printed pages.</dd>
+                    
+                    <dt>&lt;tbody&gt;</dt>
+                    <dd>Contains the main data rows of the table. Separates data from headers and footers for better styling and semantics.</dd>
+                    
+                    <dt>&lt;tfoot&gt;</dt>
+                    <dd>Contains footer rows with summary information (totals, averages, etc.). Appears at bottom visually but can be defined anywhere in code.</dd>
+                </dl>
+                <p>These elements improve accessibility, enable better styling, and make tables easier to maintain.</p>
+
+                <h4>Question 4: Image Alt Text</h4>
+                <p><strong>Q:</strong> Write appropriate alt text for: (a) a decorative border image, (b) a photo of Don Norman, (c) a chart showing website traffic data.</p>
+                <p><strong>A:</strong></p>
+                <ul>
+                    <li>(a) Decorative: <code>alt=""</code> (empty alt text, screen readers will skip it)</li>
+                    <li>(b) Photo: <code>alt="Portrait of Don Norman, author of The Design of Everyday Things"</code></li>
+                    <li>(c) Chart: <code>alt="Bar chart showing website traffic increasing from 1000 visitors in January to 5000 in December 2025"</code></li>
+                </ul>
+                <p><strong>Key principle:</strong> Alt text should convey the same information as the image. Decorative images get empty alt; informative images get descriptive text.</p>
+
+                <h4>Question 5: Document Structure</h4>
+                <p><strong>Q:</strong> Write the complete HTML5 boilerplate structure including DOCTYPE, html tag with language, head section with charset and viewport, and body.</p>
+                <p><strong>A:</strong></p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>Section B: HCI Concepts</h3>
+
+                <h4>Question 6: Norman's Affordances</h4>
+                <p><strong>Q:</strong> Define "affordance" and provide three examples from everyday objects or digital interfaces.</p>
+                <p><strong>A:</strong></p>
+                <p>
+                    <strong>Affordance</strong> is a property of an object that suggests how it should be used.
+                    It's the relationship between an object and a person that determines how the object could be used.
+                </p>
+                <p>Examples:</p>
+                <ol>
+                    <li><strong>Door handle (physical):</strong> A horizontal bar affords pushing; a vertical handle affords pulling</li>
+                    <li><strong>Button (digital):</strong> A raised, clickable area affords pressing/clicking</li>
+                    <li><strong>Scroll bar:</strong> Vertical bar with arrows affords dragging to navigate content</li>
+                </ol>
+
+                <h4>Question 7: Feedback Principle</h4>
+                <p><strong>Q:</strong> Explain why feedback is important in interface design. Give an example of poor feedback and how to improve it.</p>
+                <p><strong>A:</strong></p>
+                <p><strong>Importance:</strong> Feedback informs users about the result of their actions, confirms operations were successful, and helps prevent errors by keeping users informed of system status.</p>
+                <p><strong>Poor Example:</strong> Submit button on web form that doesn't provide any indication whether form was submitted successfully.</p>
+                <p><strong>Improvement:</strong></p>
+                <ul>
+                    <li>Disable button after click to prevent double submission</li>
+                    <li>Show loading spinner during processing</li>
+                    <li>Display success message: "Form submitted successfully!"</li>
+                    <li>Or show error message with specific problems if submission fails</li>
+                </ul>
+
+                <h4>Question 8: KLM Analysis</h4>
+                <p><strong>Q:</strong> Calculate the KLM time for the following task: User moves mouse to a button (pointing), clicks it (button press), then types a 10-character password (keystrokes). Use standard KLM times.</p>
+                <p><strong>A:</strong></p>
+                <p>Breaking down the task:</p>
+                <ol>
+                    <li>Mental preparation: M = 1.35s</li>
+                    <li>Point to button: P = 1.10s</li>
+                    <li>Click button: B = 0.10s</li>
+                    <li>Home to keyboard: H = 0.40s</li>
+                    <li>Type 10 characters: 10K = 10 × 0.20 = 2.00s</li>
+                </ol>
+                <p><strong>Total time: 1.35 + 1.10 + 0.10 + 0.40 + 2.00 = 4.95 seconds</strong></p>
+
+                <h4>Question 9: Mapping</h4>
+                <p><strong>Q:</strong> What is "mapping" in design? Provide an example of good mapping and poor mapping.</p>
+                <p><strong>A:</strong></p>
+                <p>
+                    <strong>Mapping</strong> refers to the relationship between controls and their effects.
+                    Good mapping creates an intuitive connection between the control and its result.
+                </p>
+                <p><strong>Good Mapping:</strong> Steering wheel in a car – turn left to go left, turn right to go right. The control direction matches the result direction.</p>
+                <p><strong>Poor Mapping:</strong> Four burners on a stove arranged in a square, but controls arranged in a single row. Unclear which knob controls which burner.</p>
+                <p><strong>Better Solution:</strong> Arrange controls in same spatial layout as burners, or label clearly.</p>
+
+                <h4>Question 10: GOMS Model</h4>
+                <p><strong>Q:</strong> Explain each component of GOMS (Goals, Operators, Methods, Selection rules) with an example of saving a document.</p>
+                <p><strong>A:</strong></p>
+                <dl>
+                    <dt>Goals</dt>
+                    <dd>What the user wants to accomplish. Example: "Save the current document"</dd>
+                    
+                    <dt>Operators</dt>
+                    <dd>Basic actions available to the user. Example: Click mouse, press key, move cursor</dd>
+                    
+                    <dt>Methods</dt>
+                    <dd>Sequences of operators to achieve goals. Example methods to save:
+                        <ul>
+                            <li>Method 1: Click File menu → Click Save</li>
+                            <li>Method 2: Press Ctrl+S keyboard shortcut</li>
+                            <li>Method 3: Click Save icon in toolbar</li>
+                        </ul>
+                    </dd>
+                    
+                    <dt>Selection Rules</dt>
+                    <dd>Rules for choosing between methods. Example: "If hands are already on keyboard, use Ctrl+S. If using mouse, use toolbar icon or File menu."</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h3>Section C: Practical Application</h3>
+
+                <h4>Question 11: Form Design</h4>
+                <p><strong>Q:</strong> Design an accessible login form with username and password fields. Include proper labels, input types, and a submit button.</p>
+                <p><strong>A:</strong></p>
+                <pre><code>&lt;form action="/login" method="post"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Login&lt;/legend&gt;
+        
+        &lt;p&gt;
+            &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" id="username" name="username" required&gt;
+        &lt;/p&gt;
+        
+        &lt;p&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" id="password" name="password" required&gt;
+        &lt;/p&gt;
+        
+        &lt;p&gt;
+            &lt;button type="submit"&gt;Log In&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+                <h4>Question 12: Heading Hierarchy</h4>
+                <p><strong>Q:</strong> Explain the importance of proper heading hierarchy. Fix the following incorrect heading structure:</p>
+                <pre><code>&lt;h1&gt;Website Title&lt;/h1&gt;
+&lt;h3&gt;Section 1&lt;/h3&gt;
+&lt;h2&gt;Subsection 1.1&lt;/h2&gt;
+&lt;h1&gt;Section 2&lt;/h1&gt;</code></pre>
+                <p><strong>A:</strong></p>
+                <p><strong>Importance:</strong></p>
+                <ul>
+                    <li>Screen readers use headings to navigate the page</li>
+                    <li>Search engines use heading structure to understand content</li>
+                    <li>Headings create a logical document outline</li>
+                    <li>Should be sequential (don't skip levels)</li>
+                    <li>Only one h1 per page (the main title)</li>
+                </ul>
+                <p><strong>Corrected structure:</strong></p>
+                <pre><code>&lt;h1&gt;Website Title&lt;/h1&gt;
+&lt;h2&gt;Section 1&lt;/h2&gt;
+&lt;h3&gt;Subsection 1.1&lt;/h3&gt;
+&lt;h2&gt;Section 2&lt;/h2&gt;</code></pre>
+            </article>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> – Check your HTML validity</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a> – Comprehensive HTML reference</li>
+                <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">WCAG Guidelines</a> – Web accessibility standards</li>
+                <li><a href="https://pages.github.com/" target="_blank">GitHub Pages Documentation</a> – How to publish your site</li>
+                <li>Don Norman's <cite>The Design of Everyday Things</cite> – Required reading</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Important Reminders</h2>
+            <ol>
+                <li>Start early – don't wait until the last minute</li>
+                <li>Test your HTML in multiple browsers (Chrome, Firefox, Safari)</li>
+                <li>Validate all pages using W3C validator before submission</li>
+                <li>Make sure all links work, including navigation between pages</li>
+                <li>Double-check that you're using minimal CSS (inline only, sparingly)</li>
+                <li>Commit to GitHub regularly with meaningful commit messages</li>
+                <li>Enable GitHub Pages and verify your live demo works</li>
+                <li>Review the grading criteria and ensure you meet all requirements</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <dl>
+                <dt>Q: Can I use HTML attributes like "border" on tables?</dt>
+                <dd>A: Yes, basic HTML attributes are allowed. The restriction is on CSS styling.</dd>
+                
+                <dt>Q: Is it okay to use the "width" attribute on images?</dt>
+                <dd>A: Yes, width and height attributes are acceptable for images.</dd>
+                
+                <dt>Q: Can I use &lt;strong&gt; and &lt;em&gt; for emphasis?</dt>
+                <dd>A: Absolutely! These are semantic HTML tags and should be used appropriately.</dd>
+                
+                <dt>Q: What if I need to align text or elements?</dt>
+                <dd>A: Use semantic HTML structure instead. For example, use &lt;blockquote&gt; for indented quotes rather than CSS padding.</dd>
+                
+                <dt>Q: Can I include an image of myself instead of Don Norman?</dt>
+                <dd>A: Yes, but the assignment content should still demonstrate HCI concepts. You can create a portfolio site about yourself.</dd>
+                
+                <dt>Q: How many commits should I make to GitHub?</dt>
+                <dd>A: There's no specific number, but commit frequently (at least 10-15 commits). Each time you complete a page or significant section, commit with a descriptive message.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HCI–CG Course</p>
+        <p>
+            <a href="assignment01.html">Lab 01 Instructions</a> |
+            <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
+            <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+        </p>
+        <p>
+            <strong>Questions?</strong> Contact instructor during office hours or post in course discussion forum.
+        </p>
+    </footer>
+</body>
+</html>
